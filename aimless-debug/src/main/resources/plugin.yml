@@ -1,0 +1,6 @@
+name: aimless2021
+main: com.github.xenon.aimless.plugin.AimlessPlugin
+version: 1.0
+api-version: '1.17'
+commands:
+  aimless:
