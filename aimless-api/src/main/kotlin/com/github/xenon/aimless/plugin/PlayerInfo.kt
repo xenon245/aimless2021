@@ -15,7 +15,7 @@ object PlayerInfo: Runnable {
     override fun run() {
         if (update) {
             update = false
-            val playerList = requireNotNull(LibraryLoader.load(PlayerList::class.java)) { "Player List is null!" }
+            val playerList = requireNotNull(LibraryLoader.loadNMS(PlayerList::class.java)) { "Player List is null!" }
             playerList.updatePlayerList()
         }
     }
